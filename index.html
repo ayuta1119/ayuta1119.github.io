@@ -2,103 +2,13 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>私のホームページ</title>
-    <style>
-      :root {
-        --bg: #f5f5f5;
-        --panel: #ffffff;
-        --line: #dcdcdc;
-        --text: #333333;
-        --muted: #666666;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        font-family: "Noto Sans JP", system-ui, -apple-system, "Segoe UI", sans-serif;
-        background: var(--bg);
-        color: var(--text);
-        line-height: 1.6;
-      }
-
-      header {
-        border-bottom: 1px solid var(--line);
-        background: linear-gradient(180deg, #f0f0f0, #e6e6e6);
-      }
-
-      .wrap {
-        max-width: 880px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-
-      .brand {
-        font-size: 1.25rem;
-        font-weight: 600;
-        margin: 0;
-      }
-
-      nav {
-        display: flex;
-        gap: 16px;
-        margin-top: 8px;
-      }
-
-      nav a {
-        color: var(--muted);
-        text-decoration: none;
-        padding: 6px 10px;
-        border: 1px solid var(--line);
-        border-radius: 6px;
-        background: #f7f7f7;
-      }
-
-      nav a:hover {
-        background: #ededed;
-      }
-
-      main {
-        padding: 24px 0 32px;
-      }
-
-      .panel {
-        background: var(--panel);
-        border: 1px solid var(--line);
-        border-radius: 8px;
-        padding: 20px;
-        margin-bottom: 16px;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
-      }
-
-      h1 {
-        margin: 0 0 12px;
-        font-size: 1.5rem;
-      }
-
-      h2 {
-        margin: 0 0 8px;
-        font-size: 1.1rem;
-      }
-
-      footer {
-        border-top: 1px solid var(--line);
-        background: #efefef;
-        color: var(--muted);
-        padding: 16px 0;
-        font-size: 0.95rem;
-      }
-
-      footer p {
-        margin: 4px 0;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>
-      <div class="wrap">
+      <div class="wrap nav-bar">
         <p class="brand">私のホームページ</p>
         <nav aria-label="メインナビゲーション">
           <a href="#blog">Blog</a>
@@ -108,24 +18,32 @@
     </header>
 
     <main class="wrap">
-      <div class="panel">
-        <h1>はじめに</h1>
-        <p>ここは私のシンプルなホームページです。文章やリンクを自由に書き換えて使ってください。</p>
-      </div>
+      <section class="panel">
+        <h1>ようこそ</h1>
+        <p>ここは私のシンプルなホームページです。文章やリンクを自由に書き換えて、自由にカスタマイズしてください。</p>
+      </section>
 
       <section class="panel" id="blog">
         <h2>自己紹介</h2>
-        <p>名前や好きなこと、最近取り組んでいることなどをここに書きます。</p>
+        <p>名前や好きなこと、最近取り組んでいることなどを書けるスペースです。</p>
+        <ul>
+          <li>例: 好きな本や音楽のメモ</li>
+          <li>例: 日々の学びや試したことの記録</li>
+        </ul>
       </section>
 
       <section class="panel" id="contact">
         <h2>連絡先</h2>
         <p>メールアドレスやSNSのリンクなど、連絡方法をここに記載します。</p>
+        <ul>
+          <li>メール: yourname@example.com</li>
+          <li>SNS: @yourhandle</li>
+        </ul>
       </section>
 
       <section class="panel">
         <h2>メモ</h2>
-        <p>ちょっとした覚え書きや、日々の記録を追加したいときに使ってください。</p>
+        <p>ちょっとした覚え書きや、追加したい情報があればここに残してください。</p>
       </section>
     </main>
 
