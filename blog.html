@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog | Rectan</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="wrap nav-bar">
+        <a class="brand" href="index.html">Rectan</a>
+        <nav aria-label="メインナビゲーション">
+          <a href="blog.html" aria-current="page">Blog</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <div>
+          <p class="badge">Entries</p>
+          <h1>Rectan Blog</h1>
+          <p>淡いモノトーンでまとめた投稿一覧。タグや日付を付けて読み返しやすくしています。</p>
+        </div>
+        <div class="meta">
+          <span class="badge">最新: 2024-06-28</span>
+          <span class="badge">カテゴリ: design / notes / dev</span>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="latest">
+        <h2 id="latest">最近の投稿</h2>
+        <div class="list">
+          <article>
+            <h3>モノトーンでまとめるワイヤーフレーム</h3>
+            <p>グレースケールだけでUIを組み立てる実験。情報の優先度がクリアになり、ラフでも共有しやすくなりました。</p>
+            <div class="meta">
+              <span class="badge">2024-06-28</span>
+              <span class="badge">design</span>
+            </div>
+          </article>
+          <article>
+            <h3>習慣ログのつけ方メモ</h3>
+            <p>週次で振り返るためのテンプレートを作成。3つの問いとリンク集をセットで残しておく方法を紹介しています。</p>
+            <div class="meta">
+              <span class="badge">2024-06-24</span>
+              <span class="badge">notes</span>
+            </div>
+          </article>
+          <article>
+            <h3>小さなコンポーネントの設計</h3>
+            <p>丸い枠線とシンプルな階層で、カードやバッジを組み合わせるときのポイントを整理しました。</p>
+            <div class="meta">
+              <span class="badge">2024-06-20</span>
+              <span class="badge">dev</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" aria-labelledby="archive">
+        <h2 id="archive">アーカイブ</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>2024年6月</h3>
+            <p>ワイヤーフレーム実験、習慣ログ、UIコンポーネントの三本立て。</p>
+          </div>
+          <div class="card">
+            <h3>2024年5月</h3>
+            <p>制作ログと読書メモを中心に更新。タスク管理の試行錯誤もまとめました。</p>
+          </div>
+          <div class="card">
+            <h3>2024年4月</h3>
+            <p>週次レビューをスタート。リズムを掴むための短文メモを多めに投稿。</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        <p>作った人: @cukeipota</p>
+      </div>
+    </footer>
+  </body>
+</html>
